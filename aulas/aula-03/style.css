@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+*{
+   margin: auto;
+   text-align: center;
+}
+
+.item{
+    background-color: tomato;
+    font-size: 1.2rem;
+}
+
+
+section{
+    border: 1px solid #ccc;
+    width: 600px;  
+}
+
+.container-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.container-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}

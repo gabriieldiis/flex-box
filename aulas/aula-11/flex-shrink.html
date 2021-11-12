@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>flex-shirink:0;</h1>
+    <section class="container">
+        <div class="item shirink-0">1</div>
+        <div class="item shirink-0">1</div>
+        <div class="item shirink-0">1</div>
+        <div class="item shirink-0">1</div>
+    </section>
+
+    <h1>flex-shirink:1; // conteúdo diferente</h1>
+    <section class="container">
+        <div class="item shirink-1">1</div>
+        <div class="item shirink-1">123</div>
+        <div class="item shirink-1">1234</div>
+        <div class="item shirink-1">12345</div>
+    </section>
+
+    <h1>flex-shirink:misturado; // conteúdo diferente</h1>
+    <section class="container">
+        <div class="item shirink-1">1</div>
+        <div class="item shirink-1">12</div>
+        <div class="item shirink-3">1234</div>
+        <div class="item shirink-3">12345</div>
+    </section>
+
+    <h1>flex-shirink:1; // conteúdo maior que o container</h1>
+    <section class="container">
+        <div class="item shirink-1">TesteTesteTesteTesteTesteTeste</div>
+        <div class="item shirink-1">TesteTesteTeste</div>
+        <div class="item shirink-1">TesteTesteTesteTesteTesteTesteTeste</div>
+        <div class="item shirink-1">1</div>
+    </section>
+
+    <h1>flex-shirink:misturado; // conteúdo maior que o container</h1>
+    <section class="container">
+        <div class="item shirink-1">TesteTesteTesteTesteTesteTesteTeste</div>
+        <div class="item shirink-3">1</div>
+        <div class="item shirink-1">TesteTesteTesteTesteTesteTesteTeste</div>
+        <div class="item shirink-3">1</div>
+    </section>
+
+    <h1>flex-shrink: 0; / flex-basis: valor;</h1>
+    <section class="container">
+        <div class="item shirink-0-basis">testetestetesteteste</div>
+        <div class="item shirink-0-basis">testeteste</div>
+        <div class="item shirink-0-basis">testetestetesteteste</div>
+        <div class="item shirink-0-basis">teste</div>
+    </section>
+
+    <h1>flex-shrink: 0; / flex-basis: valor; / wrap</h1>
+    <section class="container wrap">
+        <div class="item shirink-0-basis">teste teste teste teste teste</div>
+        <div class="item shirink-0-basis">teste teste teste teste teste</div>
+        <div class="item shirink-0-basis">teste teste teste teste teste</div>
+        <div class="item shirink-0-basis">teste teste teste teste teste</div>
+    </section>
+
+    <h1>flex-shrink: misturado; / flex-basis: valor;</h1>
+    <section class="container">
+        <div class="item shirink-1 shirink-1-basis">1</div>
+        <div class="item shirink-1 shirink-1-basis">1</div>
+        <div class="item shirink-3 shirink-3-basis">1</div>
+        <div class="item shirink-3 shirink-3-basis">1</div>
+    </section>
+
+    <h1>flex-shrink: misturado; / flex-basis: valor; / wrap</h1>
+    <section class="container wrap">
+        <div class="item shirink-0 shirink-3-basis ">1</div>
+        <div class="item shirink-0 shirink-3-basis "> Teste 2</div>
+        <div class="item shirink-0 shirink-3-basis ">3</div>
+        <div class="item shirink-0 shirink-3-basis ">4</div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+
+*{
+    margin: auto;
+    text-align: center;
+}
+
+.item{
+    background-color: tomato;
+    margin: 5px;
+    flex: 1 ;
+}
+
+section{
+    width: 600px;
+    border: solid 1px #ccc;
+}
+
+.container{
+    max-width: 300px;
+}
+
+.container-nowrap{
+    flex-wrap: nowrap;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+ .container-wrap-reverse{
+     flex-wrap: wrap-reverse;
+ }
+
+

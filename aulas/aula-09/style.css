@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+*{
+    text-align: center;
+}
+.container{
+    max-width: 400px; 
+    display: flex;
+    margin: 0 auto;
+    border: solid 1px #000;
+}
+
+.item{
+    margin: 5px;
+    background-color: yellowgreen;
+}
+
+.grow0{
+    flex-grow: 0;
+}
+
+.grow1{
+    flex-grow:1;   
+}
+
+.grow2{
+    flex-grow: 2;
+}

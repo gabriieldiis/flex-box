@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+*{
+    margin: auto;
+    text-align: center;
+}
+
+.espaco{
+    margin-top: 50px;
+}
+
+section{
+    border: 1px gray solid;
+    width: 600px;
+}
+
+.container{
+    display: block;
+}
+
+.item{
+    background-color: tomato;
+    margin: 5px;
+    text-align: center;
+    
+}
+
+.container-flex{
+    display: flex;
+    flex: 1;
+
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item-1{
+    flex: 1;
+}
+
